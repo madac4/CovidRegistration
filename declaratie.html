@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Programare la Vaccinare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- STYLE -->
+</head>
+
+<body>
+
+    <main>
+        <a href="/">
+            <img class="logo" src="img/logo.png" alt="guvern logo">
+        </a>
+        <div class="main__body programare__body">
+            <div class="programare">
+                <h2 class="programare__title">Declară dorința</h2>
+                <p class="programare__text">În Moldova, vaccinarea împotriva COVID-19 va fi gratuită, voluntară/ne-obligatorie și se va realiza în trei etape</p>
+                <form action="#" method="POST" class="programare__form">
+                    <label for="idnp" class="form__label">
+                        IDNP<span>*</span>
+                        <input required id="idnp" class="form__input" type="tel">                   
+                    </label>
+
+                    <label for="name" class="form__label">
+                        Nume<span>*</span>
+                        <input required id="name" class="form__input" type="text">                   
+                    </label>
+
+                    <label for="lastname" class="form__label">
+                        Prenume<span>*</span>
+                        <input required id="lastname" class="form__input" type="text">                   
+                    </label>
+
+                    <label for="age" class="form__label">
+                        Varsta<span>*</span>
+                        <input required id="age" class="form__input" type="tel">                   
+                    </label>
+
+                    <label for="tel" class="form__label">
+                        Telefon<span>*</span>
+                        <input required id="tel" class="form__input" type="tel">                   
+                    </label>
+
+                    <label for="category" class="form__label">
+                        Categorie<span>*</span>
+                        <select required class="form__select" id="category">
+                            <option value="" disabled selected hidden>Selectati</option>
+                            <option value="1">Categoria 1</option>
+                            <option value="2">Categoria 2</option>
+                        </select>                    
+                    </label>
+
+                    <label for="raion" class="form__label">
+                        Raion municipiu<span>*</span>
+                        <select required class="form__select" id="raion">
+                            <option value="" disabled selected hidden>Selectati</option>
+                            <option value="1">Hancesti</option>
+                            <option value="2">Cimislia</option>
+                        </select>                    
+                    </label>
+
+                    <label for="localitate" class="form__label">
+                        Localitate<span>*</span>
+                        <select required class="form__select" id="localitate">
+                            <option value="" disabled selected hidden>Selectati</option>
+                            <option value="1">Lapusna</option>
+                            <option value="2">Gura Galbenii</option>
+                        </select>                    
+                    </label>
+
+                    <label for="medic" class="form__label">
+                        Institutie medic de familie<span>*</span>
+                        <select required class="form__select" id="medic">
+                            <option value="" disabled selected hidden>Selectati</option>
+                            <option value="1">Medic 1</option>
+                            <option value="2">Medic 2</option>
+                        </select>                    
+                    </label>
+
+                    <div class="checkbox__container">
+                        <label for="place" class="checkbox_label">
+                          <input type="checkbox" name="checkbox" id="place" required>
+                          <span>Prefer să fiu vaccinat la locul de trai.</span>
+                        </label>
+                    </div>
+
+                    <div class="checkbox__container">
+                        <label for="medic__familie" class="checkbox_label">
+                          <input type="checkbox" name="checkbox" id="medic__familie" required>
+                          <span>Prefer să fiu vaccinat la medicul de familie.</span>
+                        </label>
+                    </div>
+
+                    <div class="checkbox__container">
+                        <label for="other__place" class="checkbox_label">
+                          <input type="checkbox" name="checkbox" id="other__place" required>
+                          <span>Accept vaccinare în altă localitate sau instituție medicală.</span>
+                        </label>
+                    </div>
+
+                    <div class="devider"></div>
+
+                    <div class="checkbox__container">
+                        <label for="confirm" class="checkbox_label">
+                          <input type="checkbox" name="checkbox" id="confirm" required>
+                          <span>Confirm pe propria răspundere că datele sunt veridice și dau acord pentru prelucrarea datelor cu caracter personal în scop de vaccinare.</span>
+                        </label>
+                    </div>
+
+                    <div class="form__buttons">
+                        <a href="/" class="form__btn back">Inapoi</a>
+                        <button class="form__btn submit" type="submit">Salveaza</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="page__thumbnail programare__thumbnail">
+                <img src="img/hero-img.svg" alt="">
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- SCRTIPTS -->
+    <script src="js/script.js"></script>
+    <!-- SCRTIPTS -->
+</body>
+
+</html>

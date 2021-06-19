@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Programare la Vaccinare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- STYLE -->
+</head>
+
+<body>
+
+    <main>
+        <a href="/">
+            <img class="logo" src="img/logo.png" alt="guvern logo">
+        </a>
+
+        <div class="main__body programare__body">
+            <div class="programare">
+                <h2 class="programare__title">Programare la vaccinare</h2>
+                <p class="programare__text">Prin intermediul acestei platforme vă puteți programa la vaccinare, puteți verifica programările Dumneavoastră sau aveți posibilitatea să vă înregistrați în lista de așteptare.</p>
+                <form action="#" method="POST" class="programare__form">
+                    <label for="raion" class="form__label">
+                        Raion municipiu<sup>*</sup>
+                        <select required class="form__select" id="raion">
+                            <option value="" disabled selected hidden>Selectati</option>
+                            <option value="1">Hancesti</option>
+                            <option value="2">Cimislia</option>
+                        </select>                    
+                    </label>
+
+                    <label for="localitate" class="form__label">
+                        Localitate<span>*</span>
+                        <select required class="form__select" id="localitate">
+                            <option value="" disabled selected hidden>Selectati</option>
+                            <option value="1">Lapusna</option>
+                            <option value="2">Gura Galbenii</option>
+                        </select>                    
+                    </label>
+
+                    <label for="institutie" class="form__label">
+                        Institutie<span>*</span>
+                        <select required class="form__select" id="institutie">
+                            <option value="" disabled selected hidden>Selectati</option>
+                            <option value="1">Institutia 1</option>
+                            <option value="2">Institutia 2</option>
+                        </select>                    
+                    </label>
+
+                    <label for="point" class="form__label">
+                        Punct de vaccinare<span>*</span>
+                        <select required class="form__select" id="point">
+                            <option value="" disabled selected hidden>Selectati</option>
+                            <option value="1">Punct 1</option>
+                            <option value="2">Punct 2</option>
+                        </select>                    
+                    </label>
+
+                    <label for="mounth" class="form__label">
+                        Luna<span>*</span>
+                        <select required class="form__select" id="mounth">
+                            <option value="" disabled selected hidden>Selectati</option>
+                            <option value="1">Ianuarie</option>
+                            <option value="2">Februarie</option>
+                        </select>                    
+                    </label>
+
+                    <label for="date" class="form__label">
+                        Data<span>*</span>
+                        <select required class="form__select" id="date">
+                            <option value="" disabled selected hidden>Selectati</option>
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                        </select>                    
+                    </label>
+
+                    <label for="hour" class="form__label">
+                        Ora<span>*</span>
+                        <select required class="form__select" id="hour">
+                            <option value="" disabled selected hidden>Selectati</option>
+                            <option value="1">08:00</option>
+                            <option value="2">09:00</option>
+                        </select>                    
+                    </label>
+
+                    <label for="idnp" class="form__label">
+                        IDNP<span>*</span>
+                        <input required id="idnp" class="form__input" type="tel">                   
+                    </label>
+
+                    <label for="name" class="form__label">
+                        Nume<span>*</span>
+                        <input required id="name" class="form__input" type="text">                   
+                    </label>
+
+                    <label for="lastname" class="form__label">
+                        Prenume<span>*</span>
+                        <input required id="lastname" class="form__input" type="text">                   
+                    </label>
+
+                    <label for="age" class="form__label">
+                        Varsta<span>*</span>
+                        <input required id="age" class="form__input" type="tel">                   
+                    </label>
+
+                    <label for="email" class="form__label">
+                        E-mail<span>*</span>
+                        <input required id="email" class="form__input" type="email">                   
+                    </label>
+
+                    <label for="category" class="form__label">
+                        Categorie<sup>*</sup>
+                        <select required class="form__select" id="category">
+                            <option value="" disabled selected hidden>Selectati</option>
+                            <option value="1">Categoria 1</option>
+                            <option value="2">Categoria 2</option>
+                        </select>                    
+                    </label>
+
+                    <div class="checkbox__container">
+                        <label for="checkbox__policy" class="checkbox_label">
+                          <input type="checkbox" name="checkbox" id="checkbox__policy" required>
+                          <span>Confirm pe propria răspundere că datele sunt veridice și dau acord pentru prelucrarea datelor cu caracter personal în scop de vaccinare.</span>
+                        </label>
+                    </div>
+
+                    <div class="form__buttons">
+                        <a href="/" class="form__btn back">Inapoi</a>
+                        <!-- <button class="form__btn submit" type="submit">Salveaza</button> -->
+                        <a href="programare-final.html" class="form__btn submit">Salveaza</a>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="page__thumbnail programare__thumbnail">
+                <img src="img/hero-img.svg" alt="">
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <!-- SCRTIPTS -->
+    <script src="js/script.js"></script>
+    <!-- SCRTIPTS -->
+</body>
+
+</html>
